@@ -1,0 +1,44 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/rush/v5/command-line.schema.json",
+
+  "commands": [
+    {
+      "name": "myscope:lint:check-all",
+      "commandKind": "bulk",
+      "summary": "Lint everything",
+      "safeForSimultaneousRushProcesses": false,
+      "enableParallelism": true,
+      "ignoreDependencyOrder": true,
+      "ignoreMissingScript": true,
+      "allowWarningsInSuccessfulBuild": false,
+      "incremental": false,
+      "watchForChanges": false
+    },
+    {
+      "name": "myscope:lint:fix-all",
+      "commandKind": "bulk",
+      "summary": "Lint and fix everything",
+      "safeForSimultaneousRushProcesses": false,
+      "enableParallelism": true,
+      "ignoreDependencyOrder": true,
+      "ignoreMissingScript": true,
+      "allowWarningsInSuccessfulBuild": false,
+      "incremental": false,
+      "watchForChanges": false
+    },
+    {
+      "name": "myscope:scm-pre-commit",
+      "commandKind": "bulk",
+      "summary": "On pre-commit hook",
+      "safeForSimultaneousRushProcesses": false,
+      "enableParallelism": false,
+      "ignoreDependencyOrder": true,
+      "ignoreMissingScript": true,
+      "allowWarningsInSuccessfulBuild": false,
+      "incremental": false,
+      "watchForChanges": false
+    }
+  ],
+
+  "parameters": []
+}

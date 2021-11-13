@@ -1,0 +1,18 @@
+{
+  "name": "@myscope/scripts-monorepo",
+  "version": "1.0.0",
+  "license": "MIT",
+  "bin": {
+    "myscope-rush": "./rush",
+    "myscope-pnpm": "./pnpm"
+  },
+  "scripts": {
+    "build": ""
+  },
+  "engines": {
+    "node": ">=12",
+    "pnpm": ">=6",
+    "npm": ">=999",
+    "yarn": ">=999"
+  }
+}

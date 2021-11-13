@@ -1,0 +1,47 @@
+# Repo specific
+
+/*
+!/apps/
+!/common/
+!/libs/
+!/scripts/
+!/tools/
+!/.editorconfig
+!/.gitattributes
+!/.gitignore
+!/LICENSE
+!/rush.json
+
+# Some well-known entries
+.env
+.eslintcache
+
+## Logs/temp
+*.log
+.DS_Store
+
+# Rush
+/common/autoinstallers/*/.npmrc
+/common/deploy/
+/common/temp/
+**/.rush/temp/
+*.build{,.error}.log
+
+# Node
+.node_repl_history
+
+# Dependencies
+node_modules/
+bower_components/
+jspm_packages/
+
+# Package managers
+.npm/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.yarn-integrity
+
+# Developer environment
+.idea/
+.vscode/

@@ -1,0 +1,22 @@
+{
+  "name": "@myscope/typescript-config",
+  "version": "1.0.0",
+  "license": "MIT",
+  "main": "./profiles/default.json",
+  "scripts": {
+    "build": ""
+  },
+  "engines": {
+    "node": ">=12",
+    "pnpm": ">=6",
+    "npm": ">=999",
+    "yarn": ">=999"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "typescript": "^4.4.4"
+  },
+  "peerDependencies": {
+    "typescript": ">=3.0.0"
+  }
+}

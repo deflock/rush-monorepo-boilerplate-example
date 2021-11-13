@@ -1,0 +1,56 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/rush/v5/rush.schema.json",
+
+  "rushVersion": "5.56.0",
+
+  "pnpmVersion": "6.21.1",
+
+  "pnpmOptions": {
+    "strictPeerDependencies": true,
+    "useWorkspaces": true
+  },
+
+  "nodeSupportedVersionRange": ">=12.13.0 <13.0.0 || >=14.15.0 <15.0.0 || >=16.13.0 <17.0.0",
+  "ensureConsistentVersions": true,
+
+  "projectFolderMinDepth": 1,
+  "projectFolderMaxDepth": 3,
+
+  "approvedPackagesPolicy": {
+    "reviewCategories": ["apps", "libs", "scripts", "tools"],
+    "ignoredNpmScopes": ["@types"]
+  },
+
+  "projects": [
+    {
+      "packageName": "@myscope/scripts-shared",
+      "projectFolder": "scripts/shared",
+      "reviewCategory": "scripts",
+      "shouldPublish": false
+    },
+    {
+      "packageName": "@myscope/scripts-monorepo",
+      "projectFolder": "scripts/monorepo",
+      "reviewCategory": "scripts",
+      "shouldPublish": false
+    },
+    {
+      "packageName": "@myscope/eslint-config",
+      "projectFolder": "tools/eslint/config",
+      "reviewCategory": "tools",
+      "shouldPublish": false
+    },
+    {
+      "packageName": "@myscope/prettier-config",
+      "projectFolder": "tools/prettier/config",
+      "reviewCategory": "tools",
+      "shouldPublish": false
+    },
+    {
+      "packageName": "@myscope/typescript-config",
+      "projectFolder": "tools/typescript/config",
+      "reviewCategory": "tools",
+      "shouldPublish": false
+    }
+  ]
+}

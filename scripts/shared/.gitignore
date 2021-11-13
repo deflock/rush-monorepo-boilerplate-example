@@ -1,0 +1,6 @@
+# Specify all project-related ignores here 
+# This way we can help some tools which use .gitignore for scanning/watching
+
+/dist/
+/.rush/temp/
+**/node_modules/

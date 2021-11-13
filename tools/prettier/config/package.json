@@ -1,0 +1,22 @@
+{
+  "name": "@myscope/prettier-config",
+  "version": "1.0.0",
+  "license": "MIT",
+  "main": "./profiles/default.cjs",
+  "scripts": {
+    "build": ""
+  },
+  "engines": {
+    "node": ">=12",
+    "pnpm": ">=6",
+    "npm": ">=999",
+    "yarn": ">=999"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "prettier": "^2.4.0"
+  },
+  "peerDependencies": {
+    "prettier": ">=1.0.0"
+  }
+}

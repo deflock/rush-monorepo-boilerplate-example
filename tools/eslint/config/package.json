@@ -1,0 +1,33 @@
+{
+  "name": "@myscope/eslint-config",
+  "version": "1.0.0",
+  "license": "MIT",
+  "main": "./profiles/default.cjs",
+  "scripts": {
+    "build": ""
+  },
+  "engines": {
+    "node": ">=12",
+    "pnpm": ">=6",
+    "npm": ">=999",
+    "yarn": ">=999"
+  },
+  "dependencies": {
+    "@rushstack/eslint-patch": "^1.0.8",
+    "@typescript-eslint/eslint-plugin": "^4.31.1",
+    "@typescript-eslint/experimental-utils": "^4.31.1",
+    "@typescript-eslint/parser": "^4.31.1",
+    "@typescript-eslint/typescript-estree": "^4.31.1",
+    "eslint-config-prettier": "^8.3.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "prettier": "^2.4.0",
+    "typescript": "^4.4.4"
+  },
+  "peerDependencies": {
+    "eslint": ">=6.0.0",
+    "prettier": ">=1.0.0",
+    "typescript": ">=3.0.0"
+  }
+}
