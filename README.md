@@ -81,7 +81,8 @@ Instead you can:
 1. Copy-paste `scripts-shared` project into `apps/` or `libs/`.
 2. Change its package name in `package.json`.
 3. Optionally add dependencies.
-4. Run `./scripts/monorepo/rush update`.
+4. Add this new project to `projects` in `./rush.json`.
+5. Run `./scripts/monorepo/rush update`.
 
 License
 -------
