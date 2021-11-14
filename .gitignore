@@ -1,17 +1,5 @@
 # Repo specific
 
-/*
-!/apps/
-!/common/
-!/libs/
-!/scripts/
-!/tools/
-!/.editorconfig
-!/.gitattributes
-!/.gitignore
-!/LICENSE
-!/rush.json
-
 # Some well-known entries
 .env
 .eslintcache
