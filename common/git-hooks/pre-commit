@@ -6,8 +6,6 @@
 
 __DIR__=$(CDPATH= cd -- "$(dirname -- "$0")" && pwd)
 
-. "${__DIR__}/monorepo/find-repo-root.sh"
-
-__REPOROOT__=`get_repo_root "${__DIR__}"`
+__REPOROOT__="${__DIR__}/../.."
 
 node "${__REPOROOT__}/common/scripts/install-run-rush.js" myscope:scm-pre-commit || exit $?

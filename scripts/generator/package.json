@@ -1,0 +1,29 @@
+{
+  "name": "@myscope/generator",
+  "version": "1.0.0",
+  "license": "MIT",
+  "scripts": {
+    "build": ""
+  },
+  "engines": {
+    "node": ">=12",
+    "pnpm": ">=6",
+    "npm": ">=999",
+    "yarn": ">=999"
+  },
+  "dependencies": {
+    "@microsoft/rush-lib": "^5.56.0",
+    "execa": "^5.1.1",
+    "jju": "^1.4.0",
+    "plop": "^2.7.6"
+  },
+  "devDependencies": {
+    "@myscope/eslint-config": "workspace:*",
+    "@myscope/monorepo": "workspace:*",
+    "@myscope/prettier-config": "workspace:*",
+    "@myscope/typescript-config": "workspace:*",
+    "@types/node": "^12.20.36",
+    "eslint": "^7.32.0",
+    "prettier": "^2.4.0"
+  }
+}

@@ -6,6 +6,14 @@ __DIR__=$(CDPATH= cd -- "$(dirname -- "$0")" && pwd)
 
 __REPOROOT__=`get_repo_root "${__DIR__}"`
 
+_pnpm_binary="${__REPOROOT__}/common/temp/pnpm-local/node_modules/.bin/pnpm"
+
+if [ ! -f "${_pnpm_binary}" ]; then
+    echo "ERROR: pnpm binary not found at \"${_pnpm_binary}\"."
+    echo "Have you run \"rush install\" or \"rush update\"?"
+    exit 1
+fi
+
 for _arg in $@; do
     for _i in import install i install-test it; do
         if [ "$_arg" = "$_i" ]; then
@@ -23,5 +31,5 @@ done
 
 NPM_CONFIG_WORKSPACE_DIR="\"${__REPOROOT__}/common/temp\"" \
 NPM_CONFIG_STORE_DIR="\"${__REPOROOT__}/common/temp/pnpm-store\"" \
-    "${__REPOROOT__}/common/temp/pnpm-local/node_modules/.bin/pnpm" \
+    "${_pnpm_binary}" \
     $@

@@ -1,5 +1,8 @@
 # Repo specific
 
+/temp/
+.envrc-local
+
 # Some well-known entries
 .env
 .eslintcache

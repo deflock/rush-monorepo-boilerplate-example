@@ -3,7 +3,7 @@
 
   "rushVersion": "5.56.0",
 
-  "pnpmVersion": "6.21.1",
+  "pnpmVersion": "6.22.2",
 
   "pnpmOptions": {
     "strictPeerDependencies": true,
@@ -23,14 +23,20 @@
 
   "projects": [
     {
-      "packageName": "@myscope/scripts-shared",
-      "projectFolder": "scripts/shared",
+      "packageName": "@myscope/generator",
+      "projectFolder": "scripts/generator",
       "reviewCategory": "scripts",
       "shouldPublish": false
     },
     {
-      "packageName": "@myscope/scripts-monorepo",
+      "packageName": "@myscope/monorepo",
       "projectFolder": "scripts/monorepo",
+      "reviewCategory": "scripts",
+      "shouldPublish": false
+    },
+    {
+      "packageName": "@myscope/scripts-shared",
+      "projectFolder": "scripts/scripts-shared",
       "reviewCategory": "scripts",
       "shouldPublish": false
     },

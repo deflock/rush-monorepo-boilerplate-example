@@ -1,0 +1,9 @@
+#!/bin/sh
+
+__DIR__=$(CDPATH= cd -- "$(dirname -- "$0")" && pwd)
+
+. "${__DIR__}/node_modules/@myscope/monorepo/find-repo-root.sh"
+
+__REPOROOT__=`get_repo_root "${__DIR__}"`
+
+"${__DIR__}/node_modules/.bin/plop" --cwd "${__DIR__}" --dest "${__REPOROOT__}" $@

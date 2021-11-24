@@ -1,5 +1,5 @@
 {
-  "name": "@myscope/scripts-monorepo",
+  "name": "@myscope/monorepo",
   "version": "1.0.0",
   "license": "MIT",
   "bin": {
